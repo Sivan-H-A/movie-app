@@ -1,6 +1,7 @@
+
 class ActorModel{
     constructor(plainActor, lname, bday, img, imdb){
-        if(typeof fname==='object'){
+        if(typeof plainActor==='object'){
             this.fname = plainActor.fname;
             this.lname = plainActor.lname;
             this.bday = plainActor.bday;
@@ -13,7 +14,7 @@ class ActorModel{
             this.img = img;
             this.imdb = imdb;
         }
-        this.age = getAge(this.bday);
+        this.age = this.getAge(this.bday);
     }
 
     getAge(dateString) {
@@ -27,3 +28,4 @@ class ActorModel{
         return age;
     }
 }
+export default ActorModel

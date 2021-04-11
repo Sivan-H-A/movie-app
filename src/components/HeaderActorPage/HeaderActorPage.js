@@ -1,10 +1,10 @@
-import React from 'react'
-import { Col, Form } from 'react-bootstrap'
-
+import React from 'react';
+import { Col, Form } from 'react-bootstrap';
+import './HeaderActorPage.css';
 
 export default function HeaderActorPage() {
     return (
-        <Form>
+        <Form className="p-actor-header">
             <Form.Row>
                 <Col>               
                     <Form.Label>Filter by:</Form.Label>  

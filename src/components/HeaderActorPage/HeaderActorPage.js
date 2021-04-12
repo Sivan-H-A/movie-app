@@ -2,13 +2,13 @@ import React from 'react';
 import { Col, Form } from 'react-bootstrap';
 import './HeaderActorPage.css';
 
-export default function HeaderActorPage() {
+export default function HeaderActorPage({onFilterChange}) {
     return (
         <Form className="p-actor-header">
             <Form.Row>
                 <Col>               
                     <Form.Label>Filter by:</Form.Label>  
-                    <Form.Control type="text"/>
+                    <Form.Control type="text" onChange={(e)=>onFilterChange(e.target.value)}/>
                 </Col>
                 <Col>
                     <Form.Label>Sort by:</Form.Label>

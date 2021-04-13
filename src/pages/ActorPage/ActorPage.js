@@ -5,15 +5,18 @@ import Actors from '../../components/Actors/Actors';
 
 export default function ActorPage({actors}) {
     const [filterText, setFilterText] = React.useState("");
-    // const [sortBy, setsortBy] = useState("fname");
+    const [sortBy, setSortBy] = React.useState("fname");
 
     function filterTextChange(data){
         setFilterText(data);
     }
+    function sortByChange(data){
+        setSortBy(data);
+    }
     return (
         <Container>
-            <HeaderActorPage onFilterChange={filterTextChange}/>
-            <Actors filterBy={filterText} actors={actors}/>
+            <HeaderActorPage onFilterChange={filterTextChange} onSortChange={sortByChange}/>
+            <Actors filterBy={filterText} sortBy={sortBy} actors={actors}/>
         </Container>
     )
 }

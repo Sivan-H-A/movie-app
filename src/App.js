@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import ActorPage from "./pages/ActorPage/ActorPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ActorModel from './model/ActorModel';
+import './App.css';
 
 function App() {
   const [actors, setActors] = useState(null);

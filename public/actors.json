@@ -54,5 +54,33 @@
         "bday": "1969/05/14",
         "img": "https://i.pinimg.com/originals/ed/a1/36/eda136c1a14124e3bdb7dc504ee2d947.jpg",
         "imdb": "https://www.imdb.com/name/nm0000949/?ref_=tt_cl_t10"
+    },
+    {
+        "fname": "Jack",
+        "lname": "Nicholson",
+        "bday": "1937/04/22",
+        "img": "https://amc-theatres-res.cloudinary.com/v1579117330/amc-cdn/production/2/movies/2000/2004/Poster/p_800x1200_One_Flew_Over_The_Cuckoos_Nest_En_113016.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000197/?ref_=tt_ov_st_sm"
+    },
+    {
+        "fname": "Reese",
+        "lname": "Witherspoon",
+        "bday": "1976/03/22",
+        "img": "https://www.closerweekly.com/wp-content/uploads/2019/09/reese-witherspoon.jpg?w=683&resize=800%2C1200",
+        "imdb": "https://www.imdb.com/name/nm0000702/?ref_=tt_cl_t1"
+    },
+    {
+        "fname": "Nicole",
+        "lname": "Kidman",
+        "bday": "1967/06/20",
+        "img": "https://imgix.bustle.com/2017/1/30/633038864.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress",
+        "imdb": "https://www.imdb.com/name/nm0000173/?ref_=tt_cl_t2"
+    },
+    {
+        "fname": "Jude",
+        "lname": "Law",
+        "bday": "1972/12/29",
+        "img": "https://pbs.twimg.com/media/EMChx-0WwAAeba6.jpg",
+        "imdb": "https://www.imdb.com/name/nm0000179/?ref_=tt_cl_t1"
     }
 ]

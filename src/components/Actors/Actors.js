@@ -16,8 +16,10 @@ export default function Actors({filterBy, sortBy, actors}) {
                     case "fname":
                     case "lname":
                         return a[sortBy].toUpperCase().localeCompare(b[sortBy].toUpperCase());
-                    case "age":
+                    case "aged":
                         return b.age-a.age;
+                    case "agea":
+                        return a.age-b.age;
 
                 }
             })

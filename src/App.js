@@ -10,7 +10,6 @@ function App() {
 
   useEffect(()=>{
     axios.get("actors.json").then(res=>{
-        console.log(res.data);
         const newActors = res.data.map(plainActor => new ActorModel(plainActor));
         setActors(newActors);
     });

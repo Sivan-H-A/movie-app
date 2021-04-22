@@ -4,7 +4,7 @@ import './ActorCard.css';
 
 export default function ActorCard({actor}) {
     return (
-            <Card style={{ width: '18rem'}} className="col-sm-6 col-md-3 c-actor-card">
+            <Card className="col-sm-6 col-md-3 c-actor-card">
                 <Card.Img variant="top" src={actor.img}/>
                 <Card.Body>
                     <Card.Title>

@@ -16,19 +16,21 @@ export default function ActorPage() {
 
     const pathPre = process.env.PUBLIC_URL;
 
-    // useEffect(()=>{
-    //     axios.get(pathPre.concat("/actors.json")).then(res=>{
-    //         const newActors = res.data.map(plainActor => new ActorModel(plainActor));
-    //         setActors(newActors);
-    //     });
-    //   }, []);
+    useEffect(()=>{
+        axios.get(pathPre.concat("/actors.json")).then(res=>{
+            const newActors = res.data.map(plainActor => new ActorModel(plainActor));
+            setActors(newActors);
+        });
+      }, []);
 
     function filterTextChange(data){
         setFilterText(data);
     }
+
     function sortByChange(data){
         setSortBy(data);
     }
+
     function handleSearchChange(newSearchText){
         setSearchText(newSearchText);
         if (newSearchText){
@@ -41,6 +43,7 @@ export default function ActorPage() {
             setResults([]);
         }
     }
+
     function addActor(resultIndex){
         if (actors && !actors.some(el => el.id == results[resultIndex].id)){
             const imgURL = "https://image.tmdb.org/t/p/w500/" + results[resultIndex].profile_path;

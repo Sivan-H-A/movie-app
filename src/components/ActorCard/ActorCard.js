@@ -13,7 +13,7 @@ export default function ActorCard({actor}) {
     return (
             <Card className="col-sm-6 col-md-3 c-actor-card" onClick={()=>setRedirectTo(actor.id)}>
                 <Card.Img variant="top" src={actor.img}/>
-                <Card.Body>
+                <Card.Body className="c-actor-card-body">
                     <Card.Title>
                         <a href={actor.imdb} target="_blank" rel="noreferrer">
                             {`${actor.fname} ${actor.lname}`}

@@ -37,10 +37,12 @@ import './MoviesPage.css';
             movie.setStars(responses[0].data.cast.slice(0,9).map(x=> x.name).join(", "));
             movie.setDirector(responses[0].data.crew.find(x=>x.job==='Director').name);
             movie.setRuntime(responses[1].data.runtime);
-            if(actorId){
+             if(actorId){
                 movieList = movieList.concat(movie);  
             } else{
-                movieList = movies.concat(movie);  
+                //adding at the beginnig
+                movieList = movieList.concat(movies); 
+                movieList.unshift(movie); 
             }
             setMovies(movieList);
         });         

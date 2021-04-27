@@ -7,7 +7,7 @@ export default function NavbarAppComponent() {
     const currentPath = usePathName();
     return (
         <Container className="c-navbar">
-            <Navbar bg="white" variant="light">
+            <Navbar  fixed="top" bg="white" variant="light" >
                 <Navbar.Brand className="c-navbar-brand">
                     <a href="#home">
                         <img src="https://cdn2.iconfinder.com/data/icons/bold-outline-v1/512/camera_cine_cinema_film-512.png" alt=""/>
